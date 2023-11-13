@@ -1,4 +1,4 @@
- #include<iostream>
+#include<iostream>
 #include<cstdlib>
 #include<string>
 #include<ctime>
@@ -14,13 +14,13 @@ int scoreboard(){
     cout << "\t\t\t\t\t\tScore of Players" << endl;
     cout << "\t\t\t\t\t\tName:";
         for(int a = 0; a <= playern;){//FOR LOOP PARA IDISPLAY YUNG LIST NG PLAYERS NA NAGLARO
-            cout << "\t" << playername[a];
+            cout << "\t" << playername[a]; // DITO NAG PPRINT NG PLAYER NAME
             a++;
         }
         cout <<endl;
         cout << "\t\t\t\t\t\tScores:";
         for(int b = 0; b <= playerscore;){//FOR LOOP PARA I DISPLAY YUNG SCORES NG BAWAT PLAYER
-            cout << "\t " <<scores[b];
+            cout << "\t " <<scores[b]; // DITO NAG PPRINT NG SCORES
             b++;
         }
         exit(0);
@@ -34,7 +34,7 @@ cout<<"\t\t\t        (_____)                ______)               ______)  "<<en
 cout<<"\t\t\t        (_____)               _______)            __________)"<<endl;
 cout<<"\t\t\t        (____)              _______)             (____)"<<endl;
 cout<<"\t\t\t  ---.__(___)     ---.__________)         ---.__(___)"<<endl;
-cout<<"\t\t\t\t\t\tHello " << playername[playern] << endl;
+cout<<"\t\t\t\t\t\tHello " << playername[playern] << endl; //DITO PINIPRINT YUNG PLAYER NAME
 cout<<"\t\t\t\t\t\tEnter your option"<<endl;
 cout<<"\t\t\t\t\t\t[1] Rock"<<endl;
 cout<<"\t\t\t\t\t\t[2] Paper"<<endl;
@@ -53,8 +53,8 @@ int main()
     cout<<"\t\t\t\t\t   ROCK PAPER SCISSORS GAME # " << gnum <<endl;
     cout<<"\t\t\t\t\t=================================="<<endl;
 	menu(); //TATAWAGIN YUNG MENU FUNCTION
-	cout << "\t\t\t\t\t\tCurrent Score: "<< scores[playerscore] <<endl;
-	cout << "\t\t\t\t\t\tRemaining Life: " << life <<endl;
+	cout << "\t\t\t\t\t\tCurrent Score: "<< scores[playerscore] <<endl; //DITO LALABAS KUNG ILAN NA YUNG SCORE MO SA GAME.
+	cout << "\t\t\t\t\t\tRemaining Life: " << life <<endl; // DITO LALABAS KUNG ILANG LIFE ANG MERON KA
 	cout << "\t\t\t\t\t\tDecision: ";
 	cin>>user;
 
